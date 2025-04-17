@@ -1,0 +1,74 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 1000;
+    justify-content: flex-start;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nav-button {
+    flex: none;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    margin-bottom: 1px;
+}
+
+.first-button {
+    margin-left: 35px;
+}
+
+.nav-button:last-child {
+    border-right: none;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.nav-button img {
+    width: 30px;
+    transition: transform 0.3s ease;
+    margin-right: 1px;
+    margin-bottom: 19px;
+}
+
+.nav-button:hover img {
+    transform: translateX(-10px);
+}
+
+.nav-button .text {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    line-height: 30px;
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-button:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Extra space for content below the fixed navbar */
+body {
+    padding-top: 100px;
+}
