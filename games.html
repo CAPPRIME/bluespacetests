@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Unblocked Games Plus</title>
     <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="navbar.css"> <!-- Navbar CSS file -->
     <style>
         /* Style the navigation bar */
         .navbar {
@@ -483,23 +484,7 @@
     </div>
 
     <script>
-        function openGame(url) {
-            var win = window.open();
-            var iframe = win.document.createElement('iframe');
-            iframe.style.position = "absolute";
-            iframe.style.top = "0";
-            iframe.style.left = "0";
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            iframe.src = url;
-            
-            // Set allowfullscreen attribute and allow fullscreen access
-            iframe.setAttribute("allowfullscreen", "true");
-            iframe.setAttribute("allow", "fullscreen");
-            
-            win.document.body.appendChild(iframe);
-        }
+    <script src="openGame.js" defer></script> <!-- AB:cloaking (for games) -->
     </script>
 
     <!-- 100% privacy-first analytics -->
