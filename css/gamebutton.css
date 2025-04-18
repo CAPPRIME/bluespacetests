@@ -1,0 +1,52 @@
+ body {
+            margin: 0; /* Remove default margin */
+            padding-top: 100px; /* Adjust based on navbar height */
+            display: flex; /* Use Flexbox body to center content */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Align items center */
+            background-color: #000; /* Optional: Give a light background color */
+        }
+
+        h1 {
+            text-align: center; /* Center text alignment for headers */
+            margin-bottom: 20px; /* Add space below header */
+            font-size: 2.5em; /* Increase header size for better visibility */
+        }
+
+        .button-container {
+            display: flex; /* Use Flexbox to arrange buttons */
+            flex-wrap: wrap; /* Allow wrapping of buttons */
+            justify-content: center; /* Center the buttons in the container */
+            width: 100%; /* Use full width for container */
+        }
+        
+        .game-button {
+            background-color: #5350fa; /* Button background color */
+            border: none;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: flex; /* Use flex on button to align items */
+            flex-direction: column; /* Stack image above text */
+            align-items: center; /* Center items horizontally */
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px; /* Reduced margin for buttons for better fit */
+            transition: background-color 0.3s, transform 0.3s; /* Include transform in the transition */
+            width: 170px; /* Set a consistent width for buttons */
+            height: auto; /* Allow height to adjust based on content */
+            font-weight: bold;
+        }
+
+        .game-button:hover {
+            background-color: #73a9ff; /* Button hover color */
+            transform: scale(1.1); /* Scale up to 110% of its original size */
+        }
+
+        .button-icon {
+            width: 125px; /* Adjust icon size */
+            height: 125px; /* Adjust height */
+            margin-bottom: 5px; /* Space between icon and text */
+            border-radius: 20px; /* Rounded corners */
+            margin-top: 5px; /* Add space below header */
+        }
