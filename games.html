@@ -7,78 +7,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
     <link rel="stylesheet" href="navbar.css"> <!-- Navbar CSS file -->
     <style>
-        /* Style the navigation bar */
-        .navbar {
-            display: flex; /* Use flexbox layout */
-            background-color: #333; /* Dark background */
-            position: fixed; /* Stay fixed at the top */
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 5px 0; /* Reduced padding for a thinner navbar */
-            z-index: 1000; /* Ensure it stays on top of other content */
-            justify-content: flex-start; /* Align items to the left */
-            border-bottom-left-radius: 25px; /* Adjust the radius value as needed */
-            border-bottom-right-radius: 25px; /* Adjust the radius value as needed */
-        }
-
-        .nav-button {
-            flex: none; /* This allows buttons to take equal space within navbar */
-            color: white; /* Text color */
-            text-decoration: none; /* Remove underline */
-            padding: 5px 10px; /* Reduced padding for thinner buttons */
-            position: relative; /* Useful for absolute positioning of children */
-            text-align: center; /* Center text within buttons */
-            overflow: hidden; /* Ensure overflow is hidden */
-            transition: background-color 0.3s; /* Smooth background color change */
-            margin-bottom: 1px; /* Adjust this value to lift buttons higher */
-        }
-
-        .first-button {
-            margin-left: 35px; /* Add desired space between navbar and first button */
-        }
-
-        .nav-button:last-child {
-            border-right: none; /* Remove border from the last button */
-        }
-
-        .nav-content {
-            display: flex; /* Use flexbox for alignment */
-            align-items: center; /* Center items vertically */
-            justify-content: flex-start; /* Align items to the left horizontally */
-            transition: transform 0.3s ease; /* Transition for the content movement */
-            height: 100%; /* Ensures the full height is utilized */
-        }
-
-        .nav-button img {
-            width: 30px; /* Set a fixed width for the icon */
-            transition: transform 0.3s ease; /* Smooth expansion of the image */
-            margin-right: 1px; /* Space between icon and text */
-            margin-bottom: 19px; /* Adjusts the icon position for perfection */
-        }
-
-        .nav-button:hover img {
-            transform: translateX(-10px); /* Move the image to the left on hover */
-        }
-
-        .nav-button .text {
-            opacity: 0; /* Initially hide the text */
-            transform: translateX(10px); /* Move text slightly to the right initially */
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition */
-            line-height: 30px; /* Set a line height that matches the height of your icon */
-            margin: 0; /* Remove default margins to ensure perfect vertical alignment */
-            font-size: 20px; /* Set a font size compatible with your design */
-            display: flex; /* Use flex for the text to center vertically */
-            align-items: center; /* Centers text vertically within its container */
-        }
-            
-        .nav-button:hover .text {
-            opacity: 1; /* Show the text on hover */
-            transform: translateX(0); /* Move text back to its normal position */
-        }
-
-        /* Extra space for content below the fixed navbar */
-        body {
+       body {
             margin: 0; /* Remove default margin */
             padding-top: 100px; /* Adjust based on navbar height */
             display: flex; /* Use Flexbox body to center content */
@@ -93,44 +22,6 @@
             font-size: 2.5em; /* Increase header size for better visibility */
         }
 
-        .button-container {
-            display: flex; /* Use Flexbox to arrange buttons */
-            flex-wrap: wrap; /* Allow wrapping of buttons */
-            justify-content: center; /* Center the buttons in the container */
-            width: 100%; /* Use full width for container */
-        }
-        
-        .game-button {
-            background-color: #5350fa; /* Button background color */
-            border: none;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            display: flex; /* Use flex on button to align items */
-            flex-direction: column; /* Stack image above text */
-            align-items: center; /* Center items horizontally */
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px; /* Reduced margin for buttons for better fit */
-            transition: background-color 0.3s, transform 0.3s; /* Include transform in the transition */
-            width: 170px; /* Set a consistent width for buttons */
-            height: auto; /* Allow height to adjust based on content */
-            font-weight: bold;
-        }
-
-        .game-button:hover {
-            background-color: #73a9ff; /* Button hover color */
-            transform: scale(1.1); /* Scale up to 110% of its original size */
-        }
-
-        .button-icon {
-            width: 125px; /* Adjust icon size */
-            height: 125px; /* Adjust height */
-            margin-bottom: 5px; /* Space between icon and text */
-            border-radius: 20px; /* Rounded corners */
-            margin-top: 5px; /* Add space below header */
-        }
-        
     </style>
 </head>
 <body>
