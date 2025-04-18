@@ -49,5 +49,7 @@
             margin-bottom: 5px; /* Space between icon and text */
             border-radius: 20px; /* Rounded corners */
             margin-top: 5px; /* Add space below header */
+            padding-left: 10px;
+            padding-right: 10px;
             
         }
