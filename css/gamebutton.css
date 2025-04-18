@@ -24,7 +24,7 @@
             background-color: rgba(200, 200, 200, 0.2); /* Button background color */
             border: none;
             color: white;
-            padding: 10px 10px;
+            padding: 10px;
             text-decoration: none;
             display: flex; /* Use flex on button to align items */
             flex-direction: column; /* Stack image above text */
