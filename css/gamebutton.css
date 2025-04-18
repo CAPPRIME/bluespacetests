@@ -44,12 +44,11 @@
         }
 
         .button-icon {
-            width: 150px; /* Adjust icon size */
-            height: 150px; /* Adjust height */
-            margin-bottom: 5px; /* Space between icon and text */
-            border-radius: 20px; /* Rounded corners */
-            margin-top: 5px; /* Add space below header */
-            padding-left: 10px;
-            padding-right: 10px;
-            
+    width: 150px; /* Adjust icon size */
+    height: 150px; /* Adjust height */
+    margin-bottom: 5px; /* Space between icon and text */
+    margin-top: 5px; /* Add space above the icon */
+    margin-left: 10px; /* Add 10px padding on the left */
+    margin-right: 10px; /* Add 10px padding on the right */
+    border-radius: 20px; /* Rounded corners */
         }
