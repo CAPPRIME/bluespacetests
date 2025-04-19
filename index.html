@@ -3,79 +3,11 @@
    <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Unblocked Games Plus - Netlify Edition</title>
-       <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
-       <style>
-           /* Style the navigation bar */
-           .navbar {
-               display: flex; /* Use flexbox layout */
-               background-color: #333; /* Dark background */
-               position: fixed; /* Stay fixed at the top */
-               top: 0;
-               left: 0;
-               width: 100%;
-               padding: 5px 0; /* Reduced padding for a thinner navbar */
-               z-index: 1000; /* Ensure it stays on top of other content */
-               justify-content: space-between; /* Align items to the left */
-               border-bottom-left-radius: 25px; /* Adjust the radius value as needed */
-               border-bottom-right-radius: 25px; /* Adjust the radius value as needed */
-           }
- 
-           .nav-button {
-               flex: none; /* This allows buttons to take equal space within navbar */
-               color: white; /* Text color */
-               text-decoration: none; /* Remove underline */
-               padding: 5px 10px; /* Reduced padding for thinner buttons */
-               position: relative; /* Useful for absolute positioning of children */
-               text-align: center; /* Center text within buttons */
-               overflow: hidden; /* Ensure overflow is hidden */
-               transition: background-color 0.3s; /* Smooth background color change */
-               margin-bottom: 1px; /* Adjust this value to lift buttons higher */
-           }
- 
-           .first-button {
-               margin-left: 35px; /* Add desired space between navbar and first button */
-           }
- 
-           .nav-button:last-child {
-               border-right: none; /* Remove border from the last button */
-           }
- 
-           .nav-content {
-               display: flex; /* Use flexbox for alignment */
-               align-items: center; /* Center items vertically */
-               justify-content: flex-start; /* Align items to the left horizontally */
-               transition: transform 0.3s ease; /* Transition for the content movement */
-               height: 100%; /* Ensures the full height is utilized */
-           }
- 
-           .nav-button img {
-               width: 30px; /* Set a fixed width for the icon */
-               transition: transform 0.3s ease; /* Smooth expansion of the image */
-               margin-right: 1px; /* Space between icon and text */
-               margin-bottom: 19px; /* Adjusts the icon position for perfection */
-           }
- 
-           .nav-button:hover img {
-               transform: translateX(-10px); /* Move the image to the left on hover */
-           }
- 
-           .nav-button .text {
-               opacity: 0; /* Initially hide the text */
-               transform: translateX(10px); /* Move text slightly to the right initially */
-               transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition */
-               line-height: 30px; /* Set a line height that matches the height of your icon */
-               margin: 0; /* Remove default margins to ensure perfect vertical alignment */
-               font-size: 20px; /* Set a font size compatible with your design */
-               display: flex; /* Use flex for the text to center vertically */
-               align-items: center; /* Centers text vertically within its container */
-           }
- 
-           .nav-button:hover .text {
-               opacity: 1; /* Show the text on hover */
-               transform: translateX(0); /* Move text back to its normal position */
-           }
- 
+       <title>Games - Unblocked Games Plus</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="/css/navbar.css"> <!-- Navbar CSS file -->
+    <link rel="stylesheet" href="/css/gamebutton.css">
+    <style>
            .search-container {
              position: relative; /* Ensure the dropdown is absolute within this container */
              width: 300px; /* Set the width to your desired size to make it larger */
@@ -304,8 +236,4 @@
               win.document.body.appendChild(iframe);
           }
       </script>
-   </body>
- 
-   <!-- 100% privacy-first analytics -->
-   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-   </html>
+    <script src="/js/opengame.js" defer></script>
